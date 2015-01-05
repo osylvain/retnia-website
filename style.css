@@ -1,10 +1,50 @@
-body {
+html, body {
     font-family: 'Raleway';
+    font-size: 18px;
+    color: #0b2869;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* NAVBAR */
+/*----------------------------------------------*/
+
+nav.navbar {
+    border: none;
+    margin: 15px 0;
+}
+
+nav .navbar-header {
+    float: left;
+}
+
+nav.navbar ul {
+    margin-top: 33px;
+}
+
+nav.navbar ul li a {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #4a81aa;
+    letter-spacing: 2px;
+}
+
+nav.navbar ul li a:hover {
+    background-color: transparent;
+}
+
+
+/* HEADER */
+/*----------------------------------------------*/
+
 header {
-    height: 700px;
-    background: linear-gradient(5deg, #212e68, #4c65a4);
+    height: 660px;
+    background: linear-gradient(10deg, #212e68, #4c65a4);
     position: relative;
 }
 
@@ -13,10 +53,6 @@ header #graph-container {
     width: 100%;
     background: url('img/graph-bg.png') no-repeat center;
     position: absolute;
-}
-
-header .container {
-    height: 100%;
 }
 
 header #header-title {
@@ -29,5 +65,193 @@ header #header-title p {
     color: white;
     font-size: 127px;
     line-height: 127px;
+    margin: 0;
     letter-spacing: 6px;
 }
+
+@media screen and (max-width: 991px) {
+    header {
+        height: 600px;
+    }
+
+    header #header-title p {
+        font-size: 100px;
+        line-height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 450px;
+    }
+
+    header #header-title p {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 400px;
+    }
+
+    header #header-title p {
+        font-size: 38px;
+        line-height: 38px;
+    }
+}
+
+
+/* COMPANY DESCRIPTION */
+/*----------------------------------------------*/
+
+section#company-description .container {
+    padding: 100px 0;
+}
+
+section#company-description p {
+    text-align: center;
+    margin: 0 5%;
+}
+
+section#company-description p:first-child {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    section#company-description p {
+        margin: 0 20%;
+    }
+}
+
+
+/* PRODUCT RESUME */
+/*----------------------------------------------*/
+
+section#product-resume {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+section#product-resume .row .col-sm-4 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+section#product-resume h2 {
+    color: #68c5e0;
+}
+
+
+/* HOW IT WORKS */
+/*----------------------------------------------*/
+
+section#how-it-works {
+    background-color: #0b2869;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(104, 197, 224, 0.1);
+}
+
+section#how-it-works img {
+    max-width: 100%;
+}
+
+section#how-it-works h2 {
+    color: #68c5e0;
+}
+
+
+/* PRODUCT DETAILS */
+/*----------------------------------------------*/
+
+section#product-details {
+    background-color: #0b2869;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+section#product-details img {
+    max-width: 100%;
+}
+
+section#product-details h2 {
+    color: #68c5e0;
+}
+
+
+/* APP */
+/*----------------------------------------------*/
+
+section#app {
+    background-color: #f1f1f1;
+    padding: 100px 0;
+}
+
+section#app .row {
+    display: flex;
+    align-items: center;
+}
+
+section#app img {
+    max-width: 100%;
+    float: right;
+}
+
+@media (max-width: 767px) {
+    section#app {
+        text-align: center;
+    }
+
+    section#app .row {
+        display: block;
+    }
+
+    section#app .row .col-sm-4 {
+        margin-bottom: 50px;
+    }
+
+    section#app img {
+        float: none;
+    }
+}
+
+
+/* FOOTER */
+/*----------------------------------------------*/
+
+footer {
+    background-color: #31a6c8;
+    text-align: center;
+}
+
+footer .container {
+    padding: 100px 0;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer a.btn {
+    border: none;
+    color: #31a6c8;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+footer a.btn:hover {
+    background-color: white;
+    color: #206d83;
+}
+
+footer #copyright {
+    margin-top: 60px;
+    font-size: 16px;
+    color: #206d83;
+}
+
