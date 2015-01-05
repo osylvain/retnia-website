@@ -44,8 +44,13 @@ nav.navbar ul li a:hover {
 
 header {
     height: 660px;
-    background: linear-gradient(10deg, #212e68, #4c65a4);
     position: relative;
+    background: #212e68; /* Old browsers */
+    background: -moz-linear-gradient(10deg, #212e68 0%, #48609d 90%, #4c65a4 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* IE10+ */
+    background: linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* W3C */
 }
 
 header #graph-container {
