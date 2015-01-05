@@ -1,0 +1,33 @@
+body {
+    font-family: 'Raleway';
+}
+
+header {
+    height: 700px;
+    background: linear-gradient(5deg, #212e68, #4c65a4);
+    position: relative;
+}
+
+header #graph-container {
+    height: 100%;
+    width: 100%;
+    background: url('img/graph-bg.png') no-repeat center;
+    position: absolute;
+}
+
+header .container {
+    height: 100%;
+}
+
+header #header-title {
+    position: absolute;
+    top: 200px;
+}
+
+header #header-title p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 127px;
+    line-height: 127px;
+    letter-spacing: 6px;
+}
