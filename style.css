@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Raleway';
+    font-family: 'Ubuntu';
     font-size: 18px;
     color: #0b2869;
 }
@@ -20,7 +20,12 @@ nav.navbar {
 }
 
 nav .navbar-header {
+    height: 86px;
     float: left;
+}
+
+nav .navbar-header img{
+    height: 100%;
 }
 
 nav.navbar ul {
@@ -30,7 +35,7 @@ nav.navbar ul {
 nav.navbar ul li a {
     text-transform: capitalize;
     font-weight: 700;
-    color: #4a81aa;
+    color: #435a91;
     letter-spacing: 2px;
 }
 
@@ -45,12 +50,12 @@ nav.navbar ul li a:hover {
 header {
     height: 660px;
     position: relative;
-    background: #212e68; /* Old browsers */
-    background: -moz-linear-gradient(10deg, #212e68 0%, #48609d 90%, #4c65a4 100%); /* FF3.6+ */
-    background: -webkit-linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* IE10+ */
-    background: linear-gradient(10deg, #212e68 0%,#48609d 90%,#4c65a4 100%); /* W3C */
+    background: #202d64; /* Old browsers */
+    background: -moz-linear-gradient(10deg, #202d64 0%,#435a91 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(10deg, #202d64 0%,#435a91 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(10deg, #202d64 0%,#435a91 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(10deg, #202d64 0%,#435a91 100%); /* IE10+ */
+    background: linear-gradient(10deg, #202d64 0%,#435a91 100%); /* W3C */
 }
 
 header #graph-container {
@@ -66,6 +71,7 @@ header #header-title {
 }
 
 header #header-title p {
+    font-family: 'Raleway';
     text-transform: uppercase;
     color: white;
     font-size: 127px;
