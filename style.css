@@ -1,3 +1,5 @@
+/*blue: 2b8dbb*/
+
 html, body {
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -9,6 +11,8 @@ h2 {
     font-size: 26px;
     margin-top: 10px;
     margin-bottom: 30px;
+    font-weight: 300;
+    font-family: 'Raleway';
 }
 
 /* NAVBAR */
@@ -22,6 +26,7 @@ nav.navbar {
 nav .navbar-header {
     height: 86px;
     float: left;
+    margin-left: 0;
 }
 
 nav .navbar-header img{
@@ -37,10 +42,28 @@ nav.navbar ul li a {
     font-weight: 700;
     color: #435a91;
     letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 nav.navbar ul li a:hover {
     background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .container>.navbar-header {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    nav.navbar ul {
+        margin-top: 15px;
+    }
+
+    nav .navbar-header {
+        height: 60px;
+    }
 }
 
 
@@ -151,7 +174,7 @@ section#product-resume .row .col-sm-4 {
 }
 
 section#product-resume h2 {
-    color: #68c5e0;
+    color: #67c5e0;
 }
 
 
@@ -166,12 +189,16 @@ section#how-it-works {
     border-bottom: 1px solid rgba(104, 197, 224, 0.1);
 }
 
+section#how-it-works h2 {
+    color: #67c5e0;
+}
+
 section#how-it-works img {
     max-width: 100%;
 }
 
-section#how-it-works h2 {
-    color: #68c5e0;
+section#how-it-works p {
+    margin-top: 40px;
 }
 
 
@@ -182,17 +209,83 @@ section#product-details {
     background-color: #0b2869;
     text-align: center;
     color: white;
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
 section#product-details img {
     max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+section#product-details img {
+    margin: auto;
 }
 
 section#product-details h2 {
-    color: #68c5e0;
+    color: #67c5e0;
 }
 
+section#product-details .col-sm-4 {
+    position: relative;
+}
+
+#machine {
+    padding-top: 50px;
+}
+
+#knowledge {
+    padding-top: 25px;
+}
+
+section#table {
+    background-color: #0b2869;
+    border-top: 5px solid #67c5e0;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    #machine, #web, #knowledge {
+        height: 360px;
+    }
+}
+
+@media (min-width: 992px) {
+    #machine, #web, #knowledge {
+        height: 410px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #machine, #web, #knowledge {
+        height: 440px;
+    }
+}
+
+@media (max-width: 767px) {
+    section#table {
+        border: none;
+    }
+
+    section#product-details img {
+        position: static;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #machine {
+        padding-top: 0;
+    }
+
+    #web, #knowledge {
+        padding-top: 50px;
+    }
+
+    section#product-details h2 {
+        margin-bottom: 10px;
+    }
+}
 
 /* APP */
 /*----------------------------------------------*/
@@ -265,4 +358,3 @@ footer #copyright {
     font-size: 16px;
     color: #206d83;
 }
-

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Retnia</title>
 
-    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,100,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,100,400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -66,8 +66,8 @@
 
     <section id="how-it-works">
         <div class="container">
-            <img src="img/how-it-works.png">
             <h2>how it works</h2>
+            <img src="img/how-it-works.png">
             <p>Explications du fontionnement de la technologie. Machine vs Oeil du patient.</p>
         </div>
     </section>
@@ -75,26 +75,29 @@
     <section id="product-details">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div id="machine" class="col-sm-4">
                     <h2>machine</h2>
                     <p>Présentation de la machine et de ses particularités</p>
+                    <img src="img/machine.png" alt="machine" class="hidden-xs"/>
+                    <img src="img/machine_mobile.png" alt="machine" class="visible-xs"/>
                 </div>
-                <div class="col-sm-4">
+                <div id="web" class="col-sm-4">
                     <h2>web and mobile</h2>
                     <p>Avantage d'avoir des maquettes adaptives</p>
+                    <img src="img/web.png" alt="web" class="hidden-xs"/>
+                    <img src="img/web_mobile.png" alt="web" class="visible-xs"/>
                 </div>
-                <div class="col-sm-4">
+                <div id="knowledge" class="col-sm-4">
                     <h2>knowledge</h2>
                     <p>Permet d'imprimer les rapports pour un patient</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="img/product-details.png">
+                    <img src="img/knowledge.png" alt="knowledge" class="hidden-xs"/>
+                    <img src="img/knowledge_mobile.png" alt="knowledge" class="visible-xs"/>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="table"></section>
 
     <section id="app">
         <div class="container">
