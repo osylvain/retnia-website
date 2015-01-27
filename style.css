@@ -8,11 +8,18 @@ html, body {
 
 h2, h3 {
     text-transform: uppercase;
-    font-size: 26px;
     margin-top: 10px;
     margin-bottom: 30px;
     font-weight: 300;
     font-family: 'Raleway';
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 26px;
 }
 
 /* NAVBAR */
@@ -178,7 +185,7 @@ section#product-resume .row .col-sm-4 {
     margin-bottom: 100px;
 }
 
-section#product-resume h2 {
+section#product-resume h3 {
     color: #67c5e0;
 }
 
@@ -201,7 +208,7 @@ section#how-it-works h2 {
     text-align: center;
     color: #67c5e0;
     font-size: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 section#how-it-works img {
@@ -222,11 +229,11 @@ section#product-details {
     padding-top: 100px;
 }
 
-section#product-details .main-section-title{
+section#product-details .main-section-title {
     text-align: center;
     color: #67c5e0;
     font-size: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 section#product-details #specs {
@@ -313,43 +320,38 @@ section#table {
 /*----------------------------------------------*/
 
 section#app {
-    padding: 300px 0;
-    color: white;
+    padding: 100px 0;
     text-align: center;
-    text-shadow: 0 0 5px black;
-    position: relative;
-    overflow: hidden;
 }
 
-section#app .video-filter {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0,0.3);
+section#app #app-specs {
+    margin-bottom: 50px;
+}
+
+section#app #app-specs h3 {
+    margin-bottom: 0;
+}
+
+section#app #browser {
+    text-align: left;
     width: 100%;
-    height: 100%;
+}
+section#app #browser .col-xs-12 {
+    border: 1px solid #eee;
+    border-bottom: none;
 }
 
-section#app video {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+section#app #video-container video {
+    border: 1px solid #eee;
+    width: 100%;
 }
 
-section#app #app-specs p {
-    positon: absolute;
-    top: 0;
-    left: 50%;
+section#app #browser img {
+    width: 100px;
 }
 
-@media (max-width: 767px) {
-    section#app {
-        padding: 200px 0;
-    }
+section#app #app-specs h2 {
+    color: #67c5e0;
 }
 
 /* FOOTER */
@@ -364,7 +366,7 @@ footer .container {
     padding: 100px 0;
 }
 
-footer h2 {
+footer h3 {
     color: white;
 }
 

@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <img src="img/idea.png" alt="The idea">
-                    <h2>the idea</h2>
+                    <h3>the idea</h3>
                     <p>
                         Using light to provide crucial information on the health of ocular tissues and processes
                         involved in ocular diseases.
@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-sm-4">
                     <img src="img/technology.png" alt="The technology">
-                    <h2>the technology</h2>
+                    <h3>the technology</h3>
                     <p>
                         Quantitative, non invasive, continuous, real time, full light spectrum analysis for ocular
                         oximetry.
@@ -82,7 +82,7 @@
                 </div>
                 <div class="col-sm-4">
                     <img src="img/potential.png" alt="The potential">
-                    <h2>the potential</h2>
+                    <h3>the potential</h3>
                     <p>Revolutionize the way we prevent, screen, diagnose and treat patients with ocular diseases.</p>
                 </div>
             </div>
@@ -154,19 +154,24 @@
     <section id="table"></section>
 
     <section id="app">
-        <div class="video-filter">
-            <video autoplay loop id="bgvid">
-                <!--<source src="vid/small.mp4" type="video/mp4">-->
-            </video>
-        </div>
         <div class="container">
             <div class="row">
-                <div id="app-specs" class="col-sm-12">
+                <div id="app-specs" class="col-xs-12">
                     <h2>our software in action</h2>
-                    <p class="animated fadeIn">User-friendly interface</p>
-                    <p class="hidden">Simple patient file creation</p>
-                    <p class="hidden">Data acquisition</p>
-                    <p class="hidden">Data archiving</p>
+                    <h3 class="animated fadeIn">User-friendly interface</h3>
+                    <h3 class="hidden">Simple patient file creation</h3>
+                    <h3 class="hidden">Data acquisition</h3>
+                    <h3 class="hidden">Data archiving</h3>
+                </div>
+                <div id="browser" class="col-xs-12">
+                    <div class="col-xs-12">
+                        <img src="img/browser.png" alt="Retnia app"/>
+                    </div>
+                </div>
+                <div id="video-container" class="col-xs-12">
+                    <video autoplay loop id="bgvid">
+                        <source src="vid/RetniaDemo.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -174,7 +179,7 @@
 
     <footer id="contact">
         <div class="container">
-            <h2>for more information</h2>
+            <h3>for more information</h3>
             <a class="btn btn-default" href="mailto:info@retnia.com" role="button">info@retnia.com</a>
             <p id="copyright">&copy; Retnia 2015, All rights reserved.</p>
         </div>
@@ -184,7 +189,7 @@
     window.onload = function() {
         var i = 1;
         window.setInterval(function() {
-            var elements = document.querySelectorAll('#app-specs p');
+            var elements = document.querySelectorAll('#app-specs h3');
             elements[(i - 1) % 4].className = 'animated fadeOut';
             window.setTimeout(function() {
                 elements[(i - 1) % 4].className = 'hidden';
