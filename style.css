@@ -322,6 +322,7 @@ section#table {
 section#app {
     padding: 100px 0;
     text-align: center;
+    background-color: #f1f1f1;
 }
 
 section#app #app-specs {
@@ -339,6 +340,7 @@ section#app #browser {
 section#app #browser .col-xs-12 {
     border: 1px solid #eee;
     border-bottom: none;
+    background-color: white;
 }
 
 section#app #video-container video {
