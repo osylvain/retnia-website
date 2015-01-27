@@ -6,7 +6,7 @@ html, body {
     color: #0b2869;
 }
 
-h2 {
+h2, h3 {
     text-transform: uppercase;
     font-size: 26px;
     margin-top: 10px;
@@ -149,13 +149,18 @@ section#company-description p {
     margin: 0 5%;
 }
 
-section#company-description p:first-child {
+section#company-description p {
     margin-bottom: 25px;
+}
+
+section#company-description p:last-child {
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
     section#company-description p {
-        margin: 0 20%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
 
@@ -185,12 +190,18 @@ section#how-it-works {
     background-color: #0b2869;
     text-align: center;
     color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.3em;
     padding: 100px 0;
     border-bottom: 1px solid rgba(104, 197, 224, 0.1);
 }
 
 section#how-it-works h2 {
+    text-align: center;
     color: #67c5e0;
+    font-size: 40px;
+    margin-bottom: 100px;
 }
 
 section#how-it-works img {
@@ -198,7 +209,8 @@ section#how-it-works img {
 }
 
 section#how-it-works p {
-    margin-top: 40px;
+    margin: 100px 0 0;
+
 }
 
 
@@ -207,24 +219,35 @@ section#how-it-works p {
 
 section#product-details {
     background-color: #0b2869;
-    text-align: center;
-    color: white;
     padding-top: 100px;
 }
 
-section#product-details img {
-    max-width: 100%;
+section#product-details .main-section-title{
+    text-align: center;
+    color: #67c5e0;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+section#product-details #specs {
+    text-align: left;
+    font-weight: 300;
+    color: white;
+}
+
+section#product-details #specs li {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+section#product-details .img-container {
     position: absolute;
     bottom: 0;
-    left: 15px;
+    /*left: 15px; makes the image centered, but actually gives the impression it is not*/
 }
 
-section#product-details img {
-    margin: auto;
-}
-
-section#product-details h2 {
-    color: #67c5e0;
+section#product-details .img-container img {
+    max-width: 100%;
 }
 
 section#product-details .col-sm-4 {
@@ -243,23 +266,18 @@ section#table {
     background-color: #0b2869;
     border-top: 5px solid #67c5e0;
     height: 100px;
+    margin-top: -5px;
 }
 
 @media (min-width: 768px) {
-    #machine, #web, #knowledge {
-        height: 360px;
+    section#product-details .col-sm-4 {
+        height: 700px;
     }
 }
 
 @media (min-width: 992px) {
-    #machine, #web, #knowledge {
-        height: 410px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #machine, #web, #knowledge {
-        height: 440px;
+    section#product-details .col-sm-4 {
+        height: 650px;
     }
 }
 
@@ -268,10 +286,18 @@ section#table {
         border: none;
     }
 
-    section#product-details img {
+    section#product-details .img-container {
         position: static;
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    section#product-details #specs {
+        text-align: center;
+    }
+
+    section#product-details #specs li {
+        list-style-type: none;
     }
 
     #machine {
@@ -281,48 +307,50 @@ section#table {
     #web, #knowledge {
         padding-top: 50px;
     }
-
-    section#product-details h2 {
-        margin-bottom: 10px;
-    }
 }
 
 /* APP */
 /*----------------------------------------------*/
 
 section#app {
-    background-color: #f1f1f1;
-    padding: 100px 0;
+    padding: 300px 0;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    position: relative;
+    overflow: hidden;
 }
 
-section#app .row {
-    display: flex;
-    align-items: center;
+section#app .video-filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
 }
 
-section#app img {
-    max-width: 100%;
-    float: right;
+section#app video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+section#app #app-specs p {
+    positon: absolute;
+    top: 0;
+    left: 50%;
 }
 
 @media (max-width: 767px) {
     section#app {
-        text-align: center;
-    }
-
-    section#app .row {
-        display: block;
-    }
-
-    section#app .row .col-sm-4 {
-        margin-bottom: 50px;
-    }
-
-    section#app img {
-        float: none;
+        padding: 200px 0;
     }
 }
-
 
 /* FOOTER */
 /*----------------------------------------------*/
