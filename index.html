@@ -41,12 +41,12 @@
     </header>
 
     <section id="company-description">
-        <div class="container">
+        <div class="container text-justify">
             <p>
                 Retnia is a Canadian company that provides innovative, non-invasive ocular oximetry tools to researchers
                 and eye-care professionals.
             </p>
-            <p>
+            <p class="hidden-xs">
                 Retnia has developed a patented, non-invasive device to accurately measure the concentration of oxygen
                 in the human eye. This unique and revolutionary technology is the fruit of more than 15 years of
                 research.
@@ -93,10 +93,9 @@
             <img src="img/how-it-works.png"  alt="How it works">
             <p>
                 Retnia’s technology is based on a patented instrument coupled with a unique software to accurately
-                measure, non-invasively and in real-time, the concentration of oxygen in the human eye. Light emitted
-                from the device travels through the eye, reflects on the eye fondus and returns. The light signal is
-                treated and analyzed to provide an accurate, absolute measure of the concentration of oxygen in the eye.
-                The measurements are then clearly presented in a user-friendly environment.
+                measure, non-invasively and in real-time, the concentration of oxygen in the human eye. Light reflects
+                on the eye fundus and is analyzed to provide accurate measurements which are then clearly presented
+                in a user-friendly environment.
             </p>
         </div>
     </section>
@@ -106,42 +105,51 @@
             <h2 class="main-section-title">revolutionary functionality</h2>
             <div id="specs" class="row">
                 <div id="machine" class="col-sm-4">
-                    <h3>device</h3>
-                    <li>Multichannel, continuous spectroreflectometry</li>
-                    <li>Non-invasive, real-time analysis</li>
-                    <li>Full light spectrum with analysis of up to 1024 frequencies</li>
-                    <li>Quantitative and qualitative measurements</li>
-                    <li>Measurement of oxygen and hemoglobin concentration</li>
-                    <li>Measurement of blood volume</li>
-                    <li>Highly accurate</li>
-                    <li>Patented</li>
-                    <div class="img-container" class="col-xs-12">
+                    <h3 id="device-toggle" class="visible-xs arrow-down">device</h3>
+                    <h3 class="hidden-xs">device</h3>
+                    <div id="device-collapse">
+                        <li>Multichannel, continuous spectroreflectometry</li>
+                        <li>Non-invasive, real-time analysis</li>
+                        <li>Full light spectrum with analysis of up to 1024 frequencies</li>
+                        <li>Quantitative and qualitative measurements</li>
+                        <li>Measurement of oxygen and hemoglobin concentration</li>
+                        <li>Measurement of blood volume</li>
+                        <li>Highly accurate</li>
+                        <li>Patented</li>
+                    </div>
+                    <div class="img-container text-center" class="col-xs-12">
                         <img src="img/machine.png" alt="The device"/>
                     </div>
                 </div>
                 <div id="web" class="col-sm-4">
-                    <h3>interface</h3>
-                    <li>Clear and practical interface</li>
-                    <li>User-friendly, simple, instinctive, data acquisition</li>
-                    <li>Data analysis and treatment</li>
-                    <li>Computer-based device control</li>
-                    <li>Multi-operator log-ins</li>
-                    <li>Detailed activity logs</li>
-                    <li>Compatible with desktops, laptops and tablets</li>
-                    <li>Copyrighted software</li>
-                    <div class="img-container" class="col-xs-12">
+                    <h3 id="web-toggle" class="visible-xs arrow-down">interface</h3>
+                    <h3 class="hidden-xs">interface</h3>
+                    <div id="web-collapse">
+                        <li>Clear and practical interface</li>
+                        <li>User-friendly, simple, instinctive, data acquisition</li>
+                        <li>Data analysis and treatment</li>
+                        <li>Computer-based device control</li>
+                        <li>Multi-operator log-ins</li>
+                        <li>Detailed activity logs</li>
+                        <li>Compatible with desktops, laptops and tablets</li>
+                        <li>Copyrighted software</li>
+                    </div>
+                    <div class="img-container text-center" class="col-xs-12">
                         <img src="img/web.png" alt="The interface"/>
                     </div>
                 </div>
                 <div id="knowledge" class="col-sm-4">
-                    <h3><span>reporting</span></h3>
-                    <li>Comprehensive data and patient file management</li>
-                    <li>Support of image registration, decomposition and comparison</li>
-                    <li>Multi-platform reporting</li>
-                    <li>Exportable results</li>
-                    <li>Adaptable design of research protocols</li>
-                    <li>Patient history tracking</li>
-                    <div class="img-container" class="col-xs-12">
+                    <h3 id="knowledge-toggle" class="visible-xs arrow-down">reporting</h3>
+                    <h3 class="hidden-xs">reporting</h3>
+                    <div id="knowledge-collapse">
+                        <li>Comprehensive data and patient file management</li>
+                        <li>Support of image registration, decomposition and comparison</li>
+                        <li>Multi-platform reporting</li>
+                        <li>Exportable results</li>
+                        <li>Adaptable design of research protocols</li>
+                        <li>Patient history tracking</li>
+                    </div>
+                    <div class="img-container text-center" class="col-xs-12">
                         <img src="img/knowledge.png" alt="The reports"/>
                     </div>
                 </div>
@@ -151,7 +159,7 @@
 
     <section id="table"></section>
 
-    <section id="app">
+    <section id="app" class="hidden-xs">
         <div class="container">
             <div class="row">
                 <div id="app-specs" class="col-xs-12">
@@ -177,9 +185,13 @@
 
     <footer id="contact">
         <div class="container">
-            <h3>for more information</h3>
-            <a class="btn btn-default" href="mailto:info@retnia.com" role="button">info@retnia.com</a>
-            <p id="copyright">&copy; Retnia 2015, All rights reserved.</p>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>for more information</h3>
+                    <a class="btn btn-default" href="mailto:info@retnia.com" role="button">info@retnia.com</a>
+                    <p id="copyright">&copy; Retnia 2015, All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -194,7 +206,23 @@
                 elements[i % 4].className = 'animated fadeIn';
                 i++;
             }, 800)
-        }, 5000)
+        }, 5000);
+
+        var titleToggleElements = document.querySelectorAll('#specs h3.visible-xs');
+        [].forEach.call(titleToggleElements, function(element) {
+            var sectionName = element.id.substr(0, element.id.indexOf("-"));
+            var collapsibleSection = document.querySelector('#' + sectionName + '-collapse');
+
+            if(window.innerWidth < 768) {
+                collapsibleSection.className += 'animated fadeOut';
+            }
+
+            element.onclick = function() {
+                collapsibleSection.classList.toggle('fadeOut');
+                collapsibleSection.classList.toggle('fadeIn');
+                this.classList.toggle('arrow-down');
+            }
+        })
     };
 </script>
 </body>
