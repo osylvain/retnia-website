@@ -297,7 +297,17 @@ section#product-details #specs h3.visible-xs {
 
 section#product-details #specs h3.visible-xs.arrow-down:after {
     transform: rotate(-315deg);
-    top:0px;
+    top: -1px;
+}
+
+section#product-details #specs h3.visible-xs:before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: white;
+    right: 20px;
+    top: -6px;
 }
 
 section#product-details #specs h3.visible-xs:after {
@@ -305,12 +315,11 @@ section#product-details #specs h3.visible-xs:after {
     position: absolute;
     height: 20px;
     width: 20px;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
+    border-bottom: 3px solid #0b2869;
+    border-right: 3px solid #0b2869;
     transform: rotate(-135deg);
     right: 30px;
     top:10px;
-    transition: ease-in 0.5s;
 }
 
 section#product-details .animated.fadeIn {
@@ -374,8 +383,8 @@ section#app #app-specs h3 {
 
 section#app #browser {
     text-align: left;
-    width: 100%;
 }
+
 section#app #browser .col-xs-12 {
     border: 1px solid #eee;
     border-bottom: none;
@@ -413,6 +422,7 @@ footer h3 {
 
 footer a.btn {
     border: none;
+    border-radius: 0;
     color: #31a6c8;
     font-size: 18px;
     padding: 10px 20px;
