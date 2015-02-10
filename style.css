@@ -178,7 +178,7 @@ section#company-description p:last-child {
 
 @media (max-width: 767px) {
     section#company-description p {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -297,7 +297,6 @@ section#product-details #specs h3.visible-xs {
 
 section#product-details #specs h3.visible-xs.arrow-down:after {
     transform: rotate(-315deg);
-    transition: ease-in-out 0.5s;
     top:0px;
 }
 
@@ -311,7 +310,7 @@ section#product-details #specs h3.visible-xs:after {
     transform: rotate(-135deg);
     right: 30px;
     top:10px;
-    transition: ease-in-out 0.5s;
+    transition: ease-in 0.5s;
 }
 
 section#product-details .animated.fadeIn {
