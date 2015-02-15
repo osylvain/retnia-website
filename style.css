@@ -296,7 +296,11 @@ section#product-details #specs h3.visible-xs {
 }
 
 section#product-details #specs h3.visible-xs.arrow-down:after {
-    transform: rotate(-315deg);
+    -webkit-transform: rotate(-315deg);
+    -moz-transform:    rotate(-315deg);
+    -ms-transform:     rotate(-315deg);
+    -o-transform:      rotate(-315deg);
+    transform:         rotate(-315deg);
     top: -1px;
 }
 
@@ -317,7 +321,11 @@ section#product-details #specs h3.visible-xs:after {
     width: 20px;
     border-bottom: 3px solid #0b2869;
     border-right: 3px solid #0b2869;
-    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform:    rotate(-135deg);
+    -ms-transform:     rotate(-135deg);
+    -o-transform:      rotate(-135deg);
+    transform:         rotate(-135deg);
     right: 30px;
     top:10px;
 }
